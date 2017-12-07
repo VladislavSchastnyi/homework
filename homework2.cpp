@@ -39,6 +39,14 @@ int logicnet(int a) {
 	return !a;
 }
 
+int lshift(int a) {
+    return (a << 1); 
+}
+
+int rshift(int a) { 
+    return (a >> 1); 
+}
+
 int main(int argc, char *argv[]) {
   char operation = 'c';
   int a, b;
@@ -111,7 +119,18 @@ int main(int argc, char *argv[]) {
     cin >> a;
     cout << a << "=" << logicnet( a) << endl;
     break; 
+ case '<':
+    cout << "Введите число: ";
+    cin >> a;
+    cout << a << "<" << lshift( a) << endl;
+  case '>':
+    cout << "Введите число: ";
+    cin >> a;
+    cout << a << ">" << rshift( a) << endl;
   }
 }
    return 0;
 }
+
+
+
