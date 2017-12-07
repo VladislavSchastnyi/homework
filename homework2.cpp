@@ -73,7 +73,10 @@ int main(int argc, char *argv[]) {
     cin >> a;
     cout << "Введите второе число: ";
     cin >> b;
+    if ( b != 0)
     cout << a << "/" << b << "=" <<  delenie( a,  b) << endl;
+    else 
+    cout << "Делить на 0 нельзя" << endl;
     break;
  case '%': 
     cout << "Введите первое число: ";
