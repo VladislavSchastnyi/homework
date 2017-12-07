@@ -123,10 +123,12 @@ int main(int argc, char *argv[]) {
     cout << "Введите число: ";
     cin >> a;
     cout << a << "<" << lshift( a) << endl;
+    break;
   case '>':
     cout << "Введите число: ";
     cin >> a;
     cout << a << ">" << rshift( a) << endl;
+    break;
   }
 }
    return 0;
