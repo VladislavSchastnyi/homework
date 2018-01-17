@@ -129,10 +129,11 @@ int main(int argc, char *argv[]) {
     cin >> a;
     cout << a << ">" << rshift( a) << endl;
     break;
+  default:
+    cerr << "Vveden nevernij parametr" << endl;
+    break;
   }
 }
    return 0;
 }
-
-
 
