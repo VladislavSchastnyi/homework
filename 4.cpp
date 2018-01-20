@@ -111,15 +111,9 @@ skobka1:
 					}
 				}
 			}
-			/*	int a=0;
-			int v=0;
-			int d=0;*/
+			
 			for (int i = 0; i<strlen(oper); i++) {
 				if ((char)oper[i] == '%') {
-					/*a=z[i];
-					v=z[i+1];
-					d=a%v;
-					result=d;*/
 					result = ((int)z[i]) % ((int)z[i + 1]);
 					if (i<(count2 - 1)) {
 						for (int j = i; j<strlen(oper) - 1; j++) {
@@ -250,7 +244,6 @@ skobka1:
 			if (oper[0] == '-')
 				result = z[0] - z[1];
 		}
-//		y[c] = '!';
 		delete[]z;
 		delete[]x;
 		if (strlen(y)>2)
