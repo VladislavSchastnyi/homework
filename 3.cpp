@@ -21,8 +21,8 @@ int main(int argc,char*argv[]) {
 			g++;
 		}
 	for(int i=0; i<strlen(argv[1]); i++)
-		if(x[i]>='0'&&x[i]<='9')               // посчитали число чисел (если число - пропускаем)
-			;
+		if(x[i]>='0'&&x[i]<='9');             // посчитали число чисел (если число - пропускаем)
+	
 		else count++;
 	double *z=new double[count];
 	int k=0;
